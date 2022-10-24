@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice To CU</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/063d5a0402.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="top">
+        <ul class="top">
+            <li class="top__menu"><a href="#">점주광장</a></li>
+            <li class="top__menu"><a href="#">점주인증</a></li>
+            <li class="top__menu"><a href="#">로그인</a></li>
+        </ul>
+    </section>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="#"><img src="../images/logo.png" alt="logo"></a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item"><a href="#">CU소개</a></li>
+            <li class="navbar__menu__item"><a href="#">상품서비스</a></li>
+            <li class="navbar__menu__item"><a href="#">매장안내</a></li>
+            <li class="navbar__menu__item"><a href="#">멤버십</a></li>
+            <li class="navbar__menu__item"><a href="#">창업상생</a></li>
+            <li class="navbar__menu__item"><a href="#">입점상담</a></li>
+            <li class="navbar__menu__item"><a href="#">새로운소식</a>
+        </ul>
+        <ul class="navbar__right">
+            <li><h3>KR<i class="fa-solid fa-caret-down"></i></h3></li>
+            <li><h3><i class="fa-sharp fa-solid fa-bars"></h3></i></li>
+        </ul>
+        
+    </nav>
+    <div class="line"></div>
+
+    <!-- main -->
+    <section id="main">
+        <div class="main__img">
+            <img src="../images/main_visual_logo_text_pc.png" alt="" class="img1">
+            <img src="../images/main_visual_illu.png" alt="" class="img2">
+        </div>
+        <div class="cu">
+            <h4><span><a href="#">CU스토리 보기</a></span> <i class="fa-solid fa-circle-chevron-right"></i></h4>
+            
+        </div>
+    </section>
+    <!-- slide -->
+    <section id="slide">
+        <div class="slide_list">
+            <div class="slide__img"><a href="#"><img src="../images/1.png" alt=""></a></div>
+            <div class="slide__img"><a href="#"><img src="../images/2.png" alt=""></a></div>
+            <div class="slide__img"><a href="#"><img src="../images/3.png" alt=""></a></div>
+            <div class="slide__img"><a href="#"><img src="../images/4.png" alt=""></a></div>
+            <div class="slide__img"><a href="#"><img src="../images/5.png" alt=""></a></div>
+        </div>
+
+        <div class="arrow">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+            <i class="fa-solid fa-circle-chevron-right"></i>  
+        </div>      
+        
+    </section>
+
+    <script>
+        var currentIndex = 0;
+
+        setInterval(function(){
+            if(currentIndex < 4 ){
+                currentIndex++;
+            }else{
+                currentIndex = 0;
+            }
+
+            var slidePosition = currentIndex * (-1200) + "px";
+            $('.slide_list').animate({left:slidePosition},400)
+        },3000)
+
+    </script>
+
+    <div class="curcle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="green"></div>
+    </div>
+    
+    
+    <!-- hotissue -->
+    <section id="hotissue">
+        <div class="hotissue__title">
+            <h3 class="title">핫이슈</h3>
+            <a href="#"><h3 class="title2">핫이슈 상품 모아보기 <i class="fa-solid fa-angle-right"></i></h3></a>
+        </div>
+        <br>
+        <br>
+        <div class="box">
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/닭곰탕.jpg" alt="">
+                    <p>푸드)야키토리묵닭곰탕</p>
+                    <div class="won">
+                        <p class="price">5,900</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/불고기.jpg" alt="">
+                    <p>도)불고기된장한상차님</p>
+                    <div class="won">
+                        <p class="price">4,900</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/치즈케익.jpg" alt="">
+                    <p>롯데)케로로쿠루치즈케익</p>
+                    <div class="won">
+                        <p class="price">1,500</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/뿌셔뿌셔.jpg" alt="">
+                    <p>오뚜기)뿌셔뿌셔달고나맛</p>
+                    <div class="won">
+                        <p class="price">1,200</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curcle">
+            <div></div>
+            <div class="green"></div>
+        </div>
+    </section>
+    <!-- banner -->
+    <section id="banner">
+        <div class="banner__box">
+            <div class="banner__text">
+                <h3>차별화된 서비스와 풍성한 혜택이 가득!</h3>
+                <p>포켓CU APP 사용해보세요:)</p>
+            </div>
+            <img src="../images/app_go_object_img01_pc.png" alt="app">
+            <button>포켓CU 설치</button>
+        </div>
+    </section>
+    <!-- plus -->
+    <section id="hotissue">
+        <div class="hotissue__title">
+            <h3 class="title">+1 증정 상품</h3>
+            <a href="#"><h3 class="title2">증정상품 모두보기 <i class="fa-solid fa-angle-right"></i></h3></a>
+        </div>
+        <br>
+        <br>
+        <div class="box">
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/다우니.jpg" alt="">
+                    <p>푸드)야키토리묵닭곰탕</p>
+                    <div class="won">
+                        <p class="price">5,900</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/치약.jpg" alt="">
+                    <p>도)불고기된장한상차님</p>
+                    <div class="won">
+                        <p class="price">4,900</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/생리대.jpg" alt="">
+                    <p>롯데)케로로쿠루치즈케익</p>
+                    <div class="won">
+                        <p class="price">1,500</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="box2">
+                    <img src="../images/칫솔.jpg" alt="">
+                    <p>오뚜기)뿌셔뿌셔달고나맛</p>
+                    <div class="won">
+                        <p class="price">1,200</p>
+                        <p class="won__won">원</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curcle">
+            <div></div>
+            <div class="green"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/063d5a0402.js" crossorigin="anonymous"></script>
+</body>
+</html>
